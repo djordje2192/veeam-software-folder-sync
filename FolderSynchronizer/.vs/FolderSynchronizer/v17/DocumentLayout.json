@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C040BF0-A886-4560-8AC9-030F9370DDC4}|FolderSynchronizer.IntegrationTests\\FolderSynchronizer.IntegrationTests.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer.integrationtests\\foldersynchronizerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C040BF0-A886-4560-8AC9-030F9370DDC4}|FolderSynchronizer.IntegrationTests\\FolderSynchronizer.IntegrationTests.csproj|solutionrelative:foldersynchronizer.integrationtests\\foldersynchronizerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer.tests\\encryptionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|solutionrelative:foldersynchronizer.tests\\encryptionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer.tests\\compressionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|solutionrelative:foldersynchronizer.tests\\compressionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer.tests\\backupservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B3E95E-349A-4BA6-BD37-8056E1C78DFF}|FolderSynchronizer.Tests\\FolderSynchronizer.Tests.csproj|solutionrelative:foldersynchronizer.tests\\backupservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\implemetation\\synchronizer .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\implemetation\\synchronizer .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\interfaces\\ifoldersynchronizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\interfaces\\ifoldersynchronizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\interfaces\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\interfaces\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\interfaces\\icompressionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\interfaces\\icompressionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\interfaces\\ibackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\interfaces\\ibackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\implemetation\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\implemetation\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\implemetation\\compressionservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\implemetation\\compressionservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|c:\\users\\djord\\source\\repos\\foldersynchronizer\\foldersynchronizer\\implemetation\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80B47843-26CB-43B1-8D80-FE09C8E1BA5A}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\implemetation\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FolderSynchronizerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.IntegrationTests\\FolderSynchronizerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer.IntegrationTests\\FolderSynchronizerIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.IntegrationTests\\FolderSynchronizerIntegrationTests.cs",
+              "RelativeToolTip": "FolderSynchronizer.IntegrationTests\\FolderSynchronizerIntegrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:28:23.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BackupServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\BackupServiceTests.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer.Tests\\BackupServiceTests.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\BackupServiceTests.cs",
+              "RelativeToolTip": "FolderSynchronizer.Tests\\BackupServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:14:33.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EncryptionServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\EncryptionServiceTests.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer.Tests\\EncryptionServiceTests.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\EncryptionServiceTests.cs",
+              "RelativeToolTip": "FolderSynchronizer.Tests\\EncryptionServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:13:49.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompressionServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\CompressionServiceTests.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer.Tests\\CompressionServiceTests.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer.Tests\\CompressionServiceTests.cs",
+              "RelativeToolTip": "FolderSynchronizer.Tests\\CompressionServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:07:22.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\EncryptionService.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\implemetation\\EncryptionService.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\EncryptionService.cs",
+              "RelativeToolTip": "FolderSynchronizer\\implemetation\\EncryptionService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:46:25.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICompressionService.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\ICompressionService.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\interfaces\\ICompressionService.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\ICompressionService.cs",
+              "RelativeToolTip": "FolderSynchronizer\\interfaces\\ICompressionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:32:14.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IEncryptionService.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\interfaces\\IEncryptionService.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IEncryptionService.cs",
+              "RelativeToolTip": "FolderSynchronizer\\interfaces\\IEncryptionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:38:50.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBackupService.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IBackupService.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\interfaces\\IBackupService.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IBackupService.cs",
+              "RelativeToolTip": "FolderSynchronizer\\interfaces\\IBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:31:03.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Synchronizer .cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\Synchronizer .cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\implemetation\\Synchronizer .cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\Synchronizer .cs",
+              "RelativeToolTip": "FolderSynchronizer\\implemetation\\Synchronizer .cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:36:16.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompressionService .cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\CompressionService .cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\implemetation\\CompressionService .cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\CompressionService .cs",
+              "RelativeToolTip": "FolderSynchronizer\\implemetation\\CompressionService .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:45:57.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFolderSynchronizer.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IFolderSynchronizer.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\interfaces\\IFolderSynchronizer.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\interfaces\\IFolderSynchronizer.cs",
+              "RelativeToolTip": "FolderSynchronizer\\interfaces\\IFolderSynchronizer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:31:40.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\Program.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\Program.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\Program.cs",
+              "RelativeToolTip": "FolderSynchronizer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T10:23:17.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BackupService.cs",
+              "DocumentMoniker": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\BackupService.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\implemetation\\BackupService.cs",
+              "ToolTip": "C:\\Users\\djord\\source\\repos\\FolderSynchronizer\\FolderSynchronizer\\implemetation\\BackupService.cs",
+              "RelativeToolTip": "FolderSynchronizer\\implemetation\\BackupService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:43:30.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
