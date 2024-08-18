@@ -21,13 +21,31 @@ namespace FolderSynchronizer.implemetation
         {
             _logger.LogInformation("Starting synchronization from {Source} to {Destination}", source, destination);
 
-            // Ensure destination folder exists
-            if (!Directory.Exists(destination))
-            {
-                Directory.CreateDirectory(destination);
-            }
+            EnsureDirectoryExists(destination);
 
-            // Copy new and updated files
+            var tasks = new List<Task>
+        {
+            Task.Run(() => CopyNewAndUpdatedFiles(source, destination)),
+            Task.Run(() => SynchronizeSubdirectories(source, destination)),
+            Task.Run(() => DeleteObsoleteFiles(source, destination)),
+            Task.Run(() => DeleteEmptyDirectories(source, destination))
+        };
+
+            Task.WhenAll(tasks).Wait();
+
+            _logger.LogInformation("Synchronization completed from {Source} to {Destination}", source, destination);
+        }
+
+        private void EnsureDirectoryExists(string path)
+        {
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+        }
+
+        private void CopyNewAndUpdatedFiles(string source, string destination)
+        {
             Parallel.ForEach(Directory.GetFiles(source), sourceFilePath =>
             {
                 string fileName = Path.GetFileName(sourceFilePath);
@@ -35,7 +53,6 @@ namespace FolderSynchronizer.implemetation
 
                 if (!File.Exists(destinationFilePath) || File.GetLastWriteTime(sourceFilePath) > File.GetLastWriteTime(destinationFilePath))
                 {
-                    // Compress and encrypt file before copying
                     byte[] fileData = File.ReadAllBytes(sourceFilePath);
                     byte[] compressedData = _compressionService.Compress(fileData);
                     byte[] encryptedData = _encryptionService.Encrypt(compressedData, "your-encryption-key");
@@ -44,8 +61,10 @@ namespace FolderSynchronizer.implemetation
                     _logger.LogInformation("Copied: {FileName}", fileName);
                 }
             });
+        }
 
-            // Recursively synchronize subdirectories
+        private void SynchronizeSubdirectories(string source, string destination)
+        {
             Parallel.ForEach(Directory.GetDirectories(source), sourceSubDir =>
             {
                 string subDirName = Path.GetFileName(sourceSubDir);
@@ -53,8 +72,10 @@ namespace FolderSynchronizer.implemetation
 
                 SynchronizeFolders(sourceSubDir, destinationSubDir);
             });
+        }
 
-            // Delete files in destination that no longer exist in source
+        private void DeleteObsoleteFiles(string source, string destination)
+        {
             Parallel.ForEach(Directory.GetFiles(destination), destinationFilePath =>
             {
                 string fileName = Path.GetFileName(destinationFilePath);
@@ -66,8 +87,10 @@ namespace FolderSynchronizer.implemetation
                     _logger.LogInformation("Deleted: {FileName}", fileName);
                 }
             });
+        }
 
-            // Delete empty directories in destination that no longer exist in source
+        private void DeleteEmptyDirectories(string source, string destination)
+        {
             Parallel.ForEach(Directory.GetDirectories(destination), destinationSubDir =>
             {
                 string subDirName = Path.GetFileName(destinationSubDir);
@@ -79,8 +102,6 @@ namespace FolderSynchronizer.implemetation
                     _logger.LogInformation("Deleted directory: {SubDirName}", subDirName);
                 }
             });
-
-            _logger.LogInformation("Synchronization completed from {Source} to {Destination}", source, destination);
         }
     }
 }
