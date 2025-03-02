@@ -3,14 +3,14 @@ using Microsoft.Extensions.Logging;
 
 namespace FolderSynchronizer.implemetation
 {
-    public class Synchronizer : IFolderSynchronizer
+    public class FolderSynchronizerService : IFolderSynchronizerService
     {
         private readonly IBackupService _backupService;
         private readonly ICompressionService _compressionService;
         private readonly IEncryptionService _encryptionService;
-        private readonly ILogger<Synchronizer> _logger;
+        private readonly ILogger<FolderSynchronizerService> _logger;
 
-        public Synchronizer(IBackupService backupService, ICompressionService compressionService, IEncryptionService encryptionService, ILogger<Synchronizer> logger)
+        public FolderSynchronizerService(IBackupService backupService, ICompressionService compressionService, IEncryptionService encryptionService, ILogger<FolderSynchronizerService> logger)
         {
             _backupService = backupService;
             _compressionService = compressionService;
@@ -51,14 +51,20 @@ namespace FolderSynchronizer.implemetation
                 string fileName = Path.GetFileName(sourceFilePath);
                 string destinationFilePath = Path.Combine(destination, fileName);
 
-                if (!File.Exists(destinationFilePath) || File.GetLastWriteTime(sourceFilePath) > File.GetLastWriteTime(destinationFilePath))
-                {
-                    byte[] fileData = File.ReadAllBytes(sourceFilePath);
-                    byte[] compressedData = _compressionService.Compress(fileData);
-                    byte[] encryptedData = _encryptionService.Encrypt(compressedData, "your-encryption-key");
+                FileInfo fileInfoDestination = new(destinationFilePath);
+                FileInfo fileInfosourceFilePath = new(sourceFilePath);
 
-                    File.WriteAllBytes(destinationFilePath, encryptedData);
-                    _logger.LogInformation("Copied: {FileName}", fileName);
+                using (FileStream inputFileStream = new FileStream(sourceFilePath, FileMode.Open, FileAccess.Read))
+                {
+                    if (!fileInfoDestination.Exists || (fileInfosourceFilePath.Length > fileInfoDestination.Length))
+                    {
+                        byte[] compressedData = _compressionService.Compress(inputFileStream);
+                        byte[] encryptedData = _encryptionService.Encrypt(compressedData, "encryption-key");
+
+                        File.WriteAllBytes(destinationFilePath, encryptedData);
+                      
+                        _logger.LogInformation("Copied: {FileName}", fileName);
+                    }
                 }
             });
         }

@@ -19,14 +19,26 @@ namespace FolderSynchronizer.Tests
         public void Compress_ShouldCompressData()
         {
             // Arrange
-            byte[] data = Encoding.UTF8.GetBytes("Test data");
+            string filePath = "testdata.txt"; // Path to save the data to a file
+            string dataToWrite = "Test data";
+            File.WriteAllText(filePath, dataToWrite); // Save the text to the file
 
-            // Act
-            byte[] compressedData = _compressionService.Compress(data);
+            // Read the data from the file into a FileStream
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+            {
+                // Act
+                byte[] compressedData = _compressionService.Compress(fileStream);
 
-            // Assert
-            Assert.NotNull(compressedData);
-            Assert.NotEqual(data.Length, compressedData.Length);
+                // Assert
+                Assert.NotNull(compressedData);
+                Assert.NotEqual(dataToWrite.Length, compressedData.Length);
+            }
+
+            // Clean up: Delete the test file
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
         }
     }
 }

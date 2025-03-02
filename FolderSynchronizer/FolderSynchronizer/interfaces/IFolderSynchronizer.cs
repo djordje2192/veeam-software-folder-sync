@@ -1,6 +1,6 @@
 ﻿namespace FolderSynchronizer.interfaces
 {
-    public interface IFolderSynchronizer
+    public interface IFolderSynchronizerService
     {
         void SynchronizeFolders(string source, string destination);
     }

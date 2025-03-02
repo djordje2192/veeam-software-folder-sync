@@ -2,6 +2,6 @@
 {
     public interface ICompressionService
     {
-        byte[] Compress(byte[] data);
+        byte[] Compress(FileStream data);
     }
 }

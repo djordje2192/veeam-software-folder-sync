@@ -25,14 +25,14 @@ var serviceProvider = new ServiceCollection()
         configure.AddConsole();
         configure.AddFile(logFilePath);
     })
-    .AddSingleton<IFolderSynchronizer, Synchronizer>()
+    .AddSingleton<IFolderSynchronizerService, FolderSynchronizerService>()
     .AddSingleton<IBackupService, BackupService>()
     .AddSingleton<ICompressionService, CompressionService>()
     .AddSingleton<IEncryptionService, EncryptionService>()
     .BuildServiceProvider();
 
 var logger = serviceProvider.GetService<ILogger<Program>>();
-var folderSynchronizer = serviceProvider.GetService<IFolderSynchronizer>();
+var folderSynchronizer = serviceProvider.GetService<IFolderSynchronizerService>();
 
 // Schedule synchronization
 Timer timer = new Timer(state =>

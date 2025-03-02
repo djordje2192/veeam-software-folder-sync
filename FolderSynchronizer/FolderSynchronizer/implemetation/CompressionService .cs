@@ -12,13 +12,15 @@ namespace FolderSynchronizer.implemetation
             _logger = logger;
         }
 
-        public byte[] Compress(byte[] data)
+        public byte[] Compress(FileStream data)
         {
             _logger.LogInformation("Compressing data");
             using var compressedStream = new MemoryStream();
+            // Create the GZipStream on top of the compressedStream (destination)
             using (var zipStream = new GZipStream(compressedStream, CompressionMode.Compress))
             {
-                zipStream.Write(data, 0, data.Length);
+                // Copy the data from the input FileStream to the zipStream (which compresses it)
+                data.CopyTo(zipStream);
             }
             return compressedStream.ToArray();
         }
